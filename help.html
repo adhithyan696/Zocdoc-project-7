@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-yellow-400 text-black px-6 py-4 flex justify-between items-center">
+    <h1 class="text-lg font-semibold">Help Center</h1>
+    <nav class="flex items-center space-x-6 text-sm">
+      <a href="#" class="hover:underline">Zocdoc</a>
+      <a href="#" class="hover:underline">Contact us</a>
+      <div class="flex items-center space-x-6 cursor-pointer">
+        <span class="material-icons text-sm">language</span>
+
+        <span> <i class="fa-solid fa-earth-americas"></i></span>
+
+        <span class="space-x-2" >English</span>
+       
+      </div>
+    </nav>
+  </header>
+
+ 
+  <section class="bg-yellow-300 py-12 px-4 relative text-center">
+    <h2 class="text-3xl font-bold mb-6">Patients, how can we help?</h2>
+
+    <!-- Search bar -->
+    <div class="max-w-xl mx-auto relative">
+      <input type="text"  placeholder=" Search for articles..." class="w-full py-3 px-5 pl-12 rounded-lg shadow text-black placeholder-black bg-yellow-200 border border-yellow-300 hover:bg-white" />
+      <svg class="absolute left-4 top-3 w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        
+      </svg>
+    </div>
+
+
+
+
+  
+    <div class="absolute inset-0 opacity-10 bg-cover bg-no-repeat " style="background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png')"></div>
+  </section>
+
+  <!--  Cards -->
+  <section class="  max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-10 px-6 ">
+
+    <div class="bg-white rounded-lg shadow p-6 text-center border border-gray-200 hover:border-black ">
+      <img src="https://img.icons8.com/ios-filled/50/000000/user.png" class="mx-auto mb-4" />
+      <h3 class="text-lg font-semibold">My Account</h3>
+      <p class="text-sm text-gray-600">7 articles</p>
+    </div>
+
+
+    <div class="bg-white rounded-lg shadow p-6 text-center border border-gray-200 hover:border-black">
+      <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" class="mx-auto mb-4" />
+      <h3 class="text-lg font-semibold">Finding a Provider</h3>
+      <p class="text-sm text-gray-600">6 articles</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6 text-center border border-gray-200 hover:border-black">
+      <img src="https://img.icons8.com/ios-filled/50/000000/calendar.png" class="mx-auto mb-4" />
+      <h3 class="text-lg font-semibold">Appointments</h3>
+      <p class="text-sm text-gray-600">18 articles</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow p-6 text-center border border-gray-200 hover:border-black">
+      <img src="https://downloads.intercomcdn.com/i/o/461793/734938f3bae952a2889cf39c/56410dff22a76578405fa04ea6dd8918.png" class="mx-auto mb-4" />
+      <h3 class="text-lg font-semibold">Finding a Provider</h3>
+      <p class="text-sm text-gray-600">6 articles</p>
+    </div>
+
+        <div class="bg-white rounded-lg shadow p-6 text-center border border-gray-200 hover:border-black">
+      <img src="https://downloads.intercomcdn.com/i/o/461792/d1a5e4667ceafba1612d7807/fdd50573a2f813e6afbab1516891a061.png" class="mx-auto mb-4" />
+      <h3 class="text-lg font-semibold">Finding a Provider</h3>
+      <p class="text-sm text-gray-600">6 articles</p>
+    </div>
+
+        <div class="bg-white rounded-lg shadow p-6 text-center border border-gray-200 hover:border-black">
+      <img src="https://downloads.intercomcdn.com/i/o/461794/0cd9c2de8172f542f0a01bda/122892b27c22204fa9723ee046a0b3a0.png" class="mx-auto mb-4" />
+      <h3 class="text-lg font-semibold">Finding a Provider</h3>
+      <p class="text-sm text-gray-600">6 articles</p>
+    </div>
+  </section>
+
+<section class="bg-amber-50 py-16 text-center ">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">Are you a provider?</h2>
+  <a href="/provider-help" class="inline-block bg-yellow-300 text-black font-medium px-6 py-3 rounded-md shadow hover:bg-yellow-400 transition">
+    Provider Help
+  </a>
+</section>
+<footer class="bg-gray-800 text-gray-300 pt-10 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8">
+
+    <!-- Zocdoc -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Zocdoc</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Contact us</a></li>
+        <li><a href="#" class="hover:underline">Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Discover -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Discover</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">The Paper Gown: Stories for and about patients</a></li>
+        <li><a href="#" class="hover:underline">Practice Resources for providers</a></li>
+        <li><a href="#" class="hover:underline">Community Standards</a></li>
+        <li><a href="#" class="hover:underline">Data and privacy</a></li>
+        <li><a href="#" class="hover:underline">Verified reviews</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance & Specialties -->
+    <div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="#" class="text-white font-semibold underline">Insurance Carriers</a></li>
+        <li><a href="#" class="text-white font-semibold underline">Top Specialties</a></li>
+      </ul>
+    </div>
+
+    <!-- For Doctors -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Are you a top doctor or health service?</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#" class="hover:underline">
+            Try Zo, your AI Phone Assistant
+            <span class="bg-yellow-500 text-black text-xs font-bold px-1 rounded ml-1">New</span>
+          </a>
+        </li>
+        <li><a href="#" class="hover:underline">List your practice on Zocdoc</a></li>
+        <li><a href="#" class="hover:underline">Become an EHR partner</a></li>
+        <li><a href="#" class="hover:underline">Access Zocdoc for Developers</a></li>
+        <li><a href="#" class="hover:underline">Learn about Zocdoc Enterprise Solutions</a></li>
+      </ul>
+    </div>
+
+    <!-- App Downloads -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Get the Zocdoc app</h3>
+      <div class="space-y-2">
+        <a href="#"><img src="appstore.png" alt="Download on App Store" class="h-10"></a>
+        <a href="#"><img src="./images/Untitled-removebg-preview(1).png" alt="Get it on Google Play" class="h-10 bg-white"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="max-w-7xl mx-auto px-6 mt-8 text-xs text-gray-400">
+    <p>
+      The content provided here and elsewhere on the Zocdoc site or mobile app is provided for general informational purposes only. 
+      It is not intended as, and Zocdoc does not provide, medical advice, diagnosis or treatment. 
+      Always contact your healthcare provider directly with any questions you may have regarding your health or specific medical advice.
+    </p>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 border-t border-gray-700 pt-4">
+    <div class="space-x-4">
+      <span>© 2025 Zocdoc, Inc.</span>
+      <a href="#" class="hover:underline">Terms</a>
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Consumer Health</a>
+      <a href="#" class="hover:underline">Site map</a>
+      <button class="bg-gray-700 px-2 py-1 rounded-full border border-gray-500 text-white text-xs">✓ X</button>
+      <a href="#" class="hover:underline">Your privacy choices</a>
+    </div>
+    <div class="flex space-x-4 mt-4 h-10 md:mt-0 ">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Popup Flow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <!-- First Popup Toggle -->
+  <input type="checkbox" id="popup1" class="hidden peer" />
+
+  <!-- Second Popup Toggle -->
+  <input type="checkbox" id="popup2" class="hidden peer/p2" />
+
+  <!-- Main Button -->
+  <label for="popup1"
+         class="border border-gray-300 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+    Add your insurance coverage
+  </label>
+
+  <!-- First Popup -->
+  <div class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center
+              opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition">
+    <div class="bg-white w-[350px] rounded-lg shadow-lg p-6 relative">
+      
+      <!-- Close -->
+      <label for="popup1" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 cursor-pointer">✕</label>
+
+      <h2 class="text-xl font-semibold mb-4">Select insurance</h2>
+      
+      <!-- "Select" button to go to second popup -->
+      <label for="popup2" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 cursor-pointer">
+        Select
+      </label>
+    </div>
+  </div>
+
+  <!-- Second Popup -->
+  <div class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center
+              opacity-0 pointer-events-none peer/p2-checked:opacity-100 peer/p2-checked:pointer-events-auto transition">
+    <div class="bg-white w-[400px] rounded-lg shadow-lg p-6 relative">
+      
+      <!-- Close second popup -->
+      <label for="popup2" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 cursor-pointer">✕</label>
+
+      <h2 class="text-xl font-semibold mb-4">Insurance Schemes</h2>
+
+      <ul class="space-y-2">
+        <li class="border p-2 rounded hover:bg-gray-100 cursor-pointer">Scheme 1</li>
+        <li class="border p-2 rounded hover:bg-gray-100 cursor-pointer">Scheme 2</li>
+        <li class="border p-2 rounded hover:bg-gray-100 cursor-pointer">Scheme 3</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

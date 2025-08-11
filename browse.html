@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zocdoc Specialties Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::after {
+      content: "›";
+      font-size: 1.2rem;
+      transition: transform 0.2s ease;
+    }
+    details[open] summary::after {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 flex justify-center items-start min-h-screen py-6 px-4">
+
+  <div class="bg-white w-full max-w-6xl rounded-lg shadow-lg p-6 sm:p-8">
+     <div class="border-b flex">
+      <input type="radio" name="tab" id="specialties" class="hidden peer/specialties" checked>
+      <label for="specialties" class="cursor-pointer px-6 py-3 border-b-2 peer-checked/specialties:border-black peer-checked/specialties:text-black text-gray-500 font-medium">
+        Specialties
+      </label>
+
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      
+      <!-- Primary Care Physicians -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Primary Care Physicians
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Atlanta, GA</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Austin, TX</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Baltimore, MD</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Boston, MA</a></li>
+        </ul>
+      </details>
+
+      <!-- Psychiatrists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Psychiatrists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Chicago, IL</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Dallas, TX</a></li>
+        </ul>
+      </details>
+
+      <!-- Optometrists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Optometrists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Denver, CO</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Detroit, MI</a></li>
+        </ul>
+      </details>
+
+      <!-- Dermatologists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Dermatologists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Houston, TX</a></li>
+        </ul>
+      </details>
+
+      <!-- Dentists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Dentists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Las Vegas, NV</a></li>
+        </ul>
+      </details>
+
+      <!-- Therapist-Counselors -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Therapist-Counselors
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Los Angeles, CA</a></li>
+        </ul>
+      </details>
+
+      <!-- Ophthalmologists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Ophthalmologists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">New York, NY</a></li>
+        </ul>
+      </details>
+
+      <!-- Orthopedic Surgeons -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Orthopedic Surgeons
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Orlando, FL</a></li>
+        </ul>
+      </details>
+
+      <!-- OBGYNs -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          OBGYNs
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Philadelphia, PA</a></li>
+        </ul>
+      </details>
+
+      <!-- Urgent Care -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Urgent Care
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Phoenix, AZ</a></li>
+        </ul>
+      </details>
+
+      <!-- Podiatrists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Podiatrists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Pittsburgh, PA</a></li>
+        </ul>
+      </details>
+
+      <!-- Psychologists -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Psychologists
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">San Antonio, TX</a></li>
+        </ul>
+      </details>
+
+      <!-- Chiropractors -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Chiropractors
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">San Diego, CA</a></li>
+        </ul>
+      </details>
+
+      <!-- Pediatricians -->
+      <details class="space-y-2">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-900 py-1">
+          Pediatricians
+        </summary>
+        <ul class="space-y-1 pl-1">
+          <li><a href="#" class="text-blue-600 hover:underline">San Francisco, CA</a></li>
+        </ul>
+      </details>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-30 z-50">
+        <div class="bg-white rounded-lg shadow-xl p-8 w-[90%] max-w-md relative">
+            <!-- Close Button -->
+            <button class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl font-semibold">&times;</button>
+
+            <!-- Title -->
+            <h2 class="text-xl font-semibold text-gray-800 mb-6">To log in, enter your email address</h2>
+
+            <!-- Email Input -->
+            <input type="email" placeholder="Email Address"
+                class="w-full border border-gray-300 rounded px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+
+            <!-- Continue Button -->
+            <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-3 rounded mb-4">
+                Continue
+            </button>
+
+            <!-- OR Divider -->
+            <div class="flex items-center mb-4">
+                <div class="flex-grow h-px bg-gray-300"></div>
+                <span class="px-3 text-gray-500 text-sm">or</span>
+                <div class="flex-grow h-px bg-gray-300"></div>
+            </div>
+
+            <!-- Google Button -->
+            <button
+                class="w-full border border-gray-300 rounded flex items-center justify-center py-3 mb-3 hover:bg-gray-100">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5 mr-3" alt="Google logo">
+                Continue with Google
+            </button>
+
+            <!-- Footer -->
+            <p class="text-center text-sm text-gray-600 mt-5">
+                New to Zocdoc?
+                <a href="./signup.html" class="text-black font-medium underline hover:text-yellow-500">Create an account</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

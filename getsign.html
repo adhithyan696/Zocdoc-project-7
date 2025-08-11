@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- navbar -->
+    <header class="flex items-center justify-between px-4 py-4 md:px-10 ">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center font-bold text-xl">Z</div>
+          <a class="font-bold text-xl" href="./page2.html">Zocdoc</a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-19 text-m font-bold text-zinc-600">
+            <a href="#" class="hover:underline">Browse</a>
+            <a href="#" class="hover:underline">Help</a>
+            <a href="#" class="hover:underline">List your practice on Zocdoc</a>
+            <a href="#" class="hover:underline">Log in</a>
+            <a href="#" class="bg-yellow-300 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">Sign up</a>
+        </nav>
+
+        <a class="md:hidden" href=""><i class="fa-solid fa-bars"></i></a>
+
+    </header>
+    <div class="bg-gray-100 py-10 flex items-center justify-center">
+        <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Sign In</h2>
+
+            <!-- Email -->
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+            <input type="email" placeholder="Enter your email"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
+
+            <!-- Password -->
+            <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <input type="password" placeholder="Enter your password"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-6">
+
+            <!-- Continue Button -->
+            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition mb-4">
+                Continue
+            </button>
+
+            <!-- Social Login -->
+            <div class="flex flex-col gap-3 mb-4">
+                <button
+                    class="w-full bg-gray-100 border border-gray-300 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition">
+                    <img src="https://www.svgrepo.com/show/355037/google.svg" class="w-5 h-5" alt="Google">
+                    Continue with Google
+                </button>
+            </div>
+
+            <!-- Switch to Signup -->
+            <p class="text-center text-sm text-gray-600">
+                New here?
+                <a href="signup.html" class="text-blue-600 font-medium hover:underline">Create an account</a>
+            </p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-gray-800 text-gray-300 pt-10 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8">
+
+    <!-- Zocdoc -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Zocdoc</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Contact us</a></li>
+        <li><a href="#" class="hover:underline">Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Discover -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Discover</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">The Paper Gown: Stories for and about patients</a></li>
+        <li><a href="#" class="hover:underline">Practice Resources for providers</a></li>
+        <li><a href="#" class="hover:underline">Community Standards</a></li>
+        <li><a href="#" class="hover:underline">Data and privacy</a></li>
+        <li><a href="#" class="hover:underline">Verified reviews</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance & Specialties -->
+    <div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="#" class="text-white font-semibold underline">Insurance Carriers</a></li>
+        <li><a href="#" class="text-white font-semibold underline">Top Specialties</a></li>
+      </ul>
+    </div>
+
+    <!-- For Doctors -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Are you a top doctor or health service?</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#" class="hover:underline">
+            Try Zo, your AI Phone Assistant
+            <span class="bg-yellow-500 text-black text-xs font-bold px-1 rounded ml-1">New</span>
+          </a>
+        </li>
+        <li><a href="#" class="hover:underline">List your practice on Zocdoc</a></li>
+        <li><a href="#" class="hover:underline">Become an EHR partner</a></li>
+        <li><a href="#" class="hover:underline">Access Zocdoc for Developers</a></li>
+        <li><a href="#" class="hover:underline">Learn about Zocdoc Enterprise Solutions</a></li>
+      </ul>
+    </div>
+
+    <!-- App Downloads -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Get the Zocdoc app</h3>
+      <div class="space-y-2">
+        <a href="#">Download on App Store</a>
+        <a href="#"><img src="./media/WhatsApp Image 2025-08-10 at 8.19.27 PM.jpeg" alt="Get it on Google Play" class="h-10 bg-white"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="max-w-7xl mx-auto px-6 mt-8 text-xs text-gray-400">
+    <p>
+      The content provided here and elsewhere on the Zocdoc site or mobile app is provided for general informational purposes only. 
+      It is not intended as, and Zocdoc does not provide, medical advice, diagnosis or treatment. 
+      Always contact your healthcare provider directly with any questions you may have regarding your health or specific medical advice.
+    </p>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 border-t border-gray-700 pt-4">
+    <div class="space-x-4">
+      <span>© 2025 Zocdoc, Inc.</span>
+      <a href="#" class="hover:underline">Terms</a>
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Consumer Health</a>
+      <a href="#" class="hover:underline">Site map</a>
+      <button class="bg-gray-700 px-2 py-1 rounded-full border border-gray-500 text-white text-xs">✓ X</button>
+      <a href="#" class="hover:underline">Your privacy choices</a>
+    </div>
+    <div class="flex space-x-4 mt-4 h-10 md:mt-0 ">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+    </footer>
+</body>
+
+</html>

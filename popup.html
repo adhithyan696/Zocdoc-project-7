@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Popup (No JS)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <!-- Hidden checkbox for toggle -->
+  <input type="checkbox" id="modal-toggle" class="hidden peer" />
+
+  <!-- Button -->
+  <label for="modal-toggle" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition cursor-pointer">
+    Select Insurance
+  </label>
+
+  <!-- Modal Background -->
+  <div class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition">
+    
+    <!-- Modal Box -->
+    <div class="bg-white w-[400px] rounded-lg shadow-lg p-6 relative">
+      
+      <!-- Close Button -->
+      <label for="modal-toggle" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 cursor-pointer">
+        ✕
+      </label>
+
+      <!-- Title -->
+      <h2 class="text-xl font-semibold mb-4">Select insurance</h2>
+
+      <!-- Search Box -->
+      <div class="mb-4">
+        <input type="text" placeholder="Search for insurance"
+          class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+
+      <!-- Popular Carriers -->
+      <p class="font-medium mb-2">Popular carriers</p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex items-center gap-2 border p-2 rounded-lg cursor-pointer hover:bg-gray-100">
+          <img src="./images/medstar-health-logo___baa3b.svg" class="w-6 h-6 object-contain">
+          <span>UnitedHealthcare</span>
+        </div>
+        <div class="flex items-center gap-2 border p-2 rounded-lg cursor-pointer hover:bg-gray-100">
+          <img src="./images/" class="w-6 h-6 object-contain">
+          <span>Aetna</span>
+        </div>
+        <div class="flex items-center gap-2 border p-2 rounded-lg cursor-pointer hover:bg-gray-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Cigna_logo.svg" class="w-6 h-6 object-contain">
+          <span>Cigna</span>
+        </div>
+        <div class="flex items-center gap-2 border p-2 rounded-lg cursor-pointer hover:bg-gray-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Blue_Cross_Blue_Shield_logo.svg" class="w-6 h-6 object-contain">
+          <span>Anthem Blue Cross</span>
+        </div>
+        <div class="flex items-center gap-2 border p-2 rounded-lg cursor-pointer hover:bg-gray-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Blue_Cross_Blue_Shield_logo.svg" class="w-6 h-6 object-contain">
+          <span>BCBS Illinois</span>
+        </div>
+        <div class="flex items-center gap-2 border p-2 rounded-lg cursor-pointer hover:bg-gray-100">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Blue_Cross_Blue_Shield_logo.svg" class="w-6 h-6 object-contain">
+          <span>Empire BCBS</span>
+        </div>
+      </div>
+
+      <!-- Paying for Myself -->
+      <div class="mt-6 text-center">
+        <a href="#" class="text-blue-600 hover:underline font-medium">I'm paying for myself</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

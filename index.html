@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOCDOC</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+         <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <style>
+        * {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+
+   
+<body class="bg-[#FFF9EC] text-gray-900">
+
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-4 py-4 md:px-10 ">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center font-bold text-xl">Z</div>
+            <a class="font-bold text-xl" href="#home">Zocdoc</a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-19 text-m font-bold text-zinc-600 fixed top-5 right-0 left-100 ">
+            <a href="/browse.html" class="hover:underline">Browse</a>
+            <a href="help.html" class="hover:underline">Help</a>
+            <a href="https://zocdoc.vercel.app/" class="hover:underline">List your practice on Zocdoc</a>
+            <a href="/login.html" class="hover:underline">Log in</a>
+            <a href="./signup.html" class="bg-yellow-300 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">Sign up</a>
+        </nav>
+
+        <a class="md:hidden" href=""><i class="fa-solid fa-bars"></i></a>
+
+    </header>
+
+
+    <!-- home page -->
+
+    <div class="absolute" id="home">
+        <img class="float-left"
+            src="./images/pharmacist-giving-medicine-pills-to-patient-another-hand-vector-illustration-flat-style-84230988-removebg-preview.png"
+            alt="">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="text-center px-4 pt-12 pb-16 relative text-">
+        <h1 class="text-2xl md:text-5xl text-zinc-800 leading-tight max-w-3xl mt-20 ml-auto">
+            Book local dermatologists <br class="hidden md:block"> who take your insurance
+        </h1>
+
+
+        <!-- Search Bar -->
+        <div class="mt-35 max-w-4xl mx-auto bg-white rounded-lg border p-4 md:flex md:items-center md:gap-2 shadow-md">
+            <div class="flex items-center gap-2 border-b md:border-none py-2 md:py-0 flex-1">
+                <i class="fa-solid fa-magnifying-glass" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor"></i>
+                <input type="text" placeholder="Condition, procedure, doctor..." class="w-full outline-none" />
+            </div>
+            <div class="flex items-center gap-2 border-b md:border-none py-2 md:py-0 flex-1">
+                <i class="fa-solid fa-location-crosshairs" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor"></i>
+                <input type="text" placeholder="Ernakulam, KL" class="w-full outline-none" />
+            </div>
+            <div class="flex items-center gap-2 border-b md:border-none py-2 md:py-0 flex-1">
+                <i class="fa-solid fa-question" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor"></i>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12h6m-3-3v6m5-9H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2z" />
+                </svg>
+                <input type="text" placeholder="Insurance carrier and plan" class="w-full outline-none" />
+            </div>
+            <button class="bg-yellow-300 p-3 rounded md:ml-2 hover:bg-yellow-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+        </div>
+
+
+        <div class="mt-40 bg-white w-full h-">
+
+            <!-- Heading -->
+            <div class="max-w-5xl me-auto ms-10 p-13">
+                <h1 class="text-2xl font-bold text-gray-900 mt-">
+                    Find an in-network doctor from over 1,000 insurance plans
+                </h1>
+                <p class="text-gray-600 mt-1">
+                    Add your insurance to see in-network primary care doctors
+                </p>
+
+                <!-- Insurance Logos -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-10">
+                    <!-- Aetna -->
+                    <div class="border rounded-lg p-4 flex items-center justify-center hover:shadow-md transition"><a
+                            href=""> <img src="./images/aetna.svg" alt="Aetna" class="h-5"></a>
+
+                    </div>
+                    <!-- Cigna -->
+                    <div class="border rounded-lg p-4 flex items-center justify-center hover:shadow-md transition">
+                        <img src="./images/cigna.svg" alt="Cigna" class="h-8">
+                    </div>
+                    <!-- United Healthcare -->
+                    <div class="border rounded-lg p-4 flex items-center justify-center hover:shadow-md transition">
+                        <img src="./images/united healyjh.svg" alt="United Healthcare" class="h-8">
+                    </div>
+                    <!-- Medicare -->
+                    <div class="border rounded-lg p-4 flex items-center justify-center hover:shadow-md transition">
+                        <img src="./images/medicare.svg" alt="Medicare" class="h-8">
+                    </div>
+                    <!-- Blue Cross Blue Shield -->
+                    <div class="border rounded-lg p-4 flex items-center justify-center hover:shadow-md transition">
+                        <img src="./images/BlueCrossIcon___2d047.svg" alt="Blue Cross Blue Shield" class="h-8">
+                    </div>
+                </div>
+
+                <!-- See All Link -->
+                <div class="mt-15  me-200 md:text-sm">
+                    <a href="#" class="text-black underline ">See all (1,000+)</a>
+                </div>
+
+                <!-- Add Insurance Coverage Button -->
+                <div class="mt-16  ">
+                    <a href="./popup.html"
+   class="border border-gray-300 text-gray-800 px-6 py-2 mr-200 rounded-lg hover:bg-gray-100 transition">
+   Add your insurance coverage
+</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="max-w-6xl w-full mb-60 items-center mt-20 h-1 ">
+            <h2 class="text-2xl font-semibold mb-15 mt-10 text-center">Top-searched specialties</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+
+                <!-- Card -->
+                <div
+                    class="bg-yellow-100 rounded-lg md:p-8 flex flex-col items-center text-center hover:shadow-lg cursor-pointer ">
+                    <img src="./images/primary-removebg-preview.png" alt="Primary Care" class="w-15 h-15 mb-4">
+                    <p class="font-medium">Primary Care</p>
+                </div>
+
+                <div
+                    class="bg-yellow-100 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg cursor-pointer">
+                    <img src="./images/Untitled-removebg-preview.png" alt="Dentist" class="w-18 h-13 mb-4">
+                    <p class="font-medium">Dentist</p>
+                </div>
+
+                <div
+                    class="bg-yellow-100 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg cursor-pointer">
+                    <img src="./images/baby-sleeping--removebg-preview.png" alt="OB-GYN" class="w-15  h-15 mb-4">
+                    <p class="font-medium">OB-GYN</p>
+                </div>
+
+                <div
+                    class="bg-yellow-100 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg cursor-pointer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3175/3175166.png" alt="Dermatologist"
+                        class="w-12 h-12 mb-4">
+                    <p class="font-medium">Dermatologist</p>
+                </div>
+
+                <div
+                    class="bg-yellow-100 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg cursor-pointer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048949.png" alt="Psychiatrist"
+                        class="w-12 h-12 mb-4">
+                    <p class="font-medium">Psychiatrist</p>
+                </div>
+
+                <div
+                    class="bg-yellow-100 rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg cursor-pointer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/709/709612.png" alt="Eye Doctor"
+                        class="w-12 h-12 mb-4">
+                    <p class="font-medium">Eye Doctor</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <div class="max-w-6xl w-full text-center bg-white p-10 w-screen mt-25 max-w-7xl mx-auto ">
+    <!-- Heading -->
+    <h2 class="text-2xl font-medium mb-15">Let’s get you a doc who gets you</h2>
+
+    <!-- Cards container -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition">
+        <img src="https://d36l6oq2276obd.cloudfront.net/ValuePropsInsurance___5f19a.svg" alt="Insurance" class="w-50 h-50 mb-4">
+        <p class="text-lg font-medium mb-4">Browse providers who take your insurance</p>
+        <button class="border border-gray-400 rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-100">See specialties</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition">
+        <img src="https://d36l6oq2276obd.cloudfront.net/ValuePropsReviews___d6977.svg" alt="Reviews" class="w-50 h-50 mb-4">
+        <p class="text-lg font-medium mb-4">Read reviews from users</p>
+        <button class="border border-gray-400 rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-100 mt-7">See providers</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition">
+        <img src="https://d36l6oq2276obd.cloudfront.net/ValuePropsBook___893a8.svg" alt="Book" class="w-50 h-50 mb-4">
+        <p class="text-lg font-medium mb-4">Book an appointment today, online</p>
+        <button class="border border-gray-400 rounded-lg px-4 py-2 text-sm font-medium hover:bg-gray-100">See availability</button>
+      </div>
+
+    </div>
+  </div>
+
+   <section class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 py-16 bg-orange-300">
+    
+    <!-- Left Text Section -->
+    <div class="max-w-md text-left space-y-4 ms-20">
+      <h2 class="text-2xl font-semibold tect-grey-700 leading-snug">Thousands of providers.<br>One app.</h2>
+      <p class="text-gray-800">The Zocdoc app is the quickest, easiest way to book and keep track of your appointments.</p>
+      <p class="font-medium font-gray-800">Scan the QR code to get the app now</p>
+      
+      <!-- QR Code -->
+       <div class="bg-white w-27 h-28 rounded-lg ">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.zocdoc.com" alt="QR Code" class="w-28 h-28 p-1 "></div>
+
+      <!-- Store Buttons -->
+      <div class="flex space-x-3 pt-2">
+        <a href="#"><img src="./images/images-removebg-preview(1).png" alt="App Store" class="h-10"></a>
+        <a href="#"><img src="./images/Untitled-removebg-preview(1).png" alt="Google Play" class="h-10"></a>
+      </div>
+    </div>
+
+    <!-- Right Image Section -->
+    <div class="relative mt-10 md:mt-0">
+      <!-- Curved Yellow Background -->
+      <div class="absolute bottom-0 right-0 w-72 h-72 bg-yellow-300 rounded-full transform translate-x-1/3 translate-y-1/3 -z-10"></div>
+      <img src="https://d36l6oq2276obd.cloudfront.net/zocdoc-app-in-hand___93564.png" alt="Phone Mockup" class="max-w-xs drop-shadow-2xl">
+      
+    </div>
+
+  </section>
+
+  <section class="bg-white py-12">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 gap-10">
+    
+    <!-- Left Image -->
+    <div class="flex-shrink-0 w-full md:w-1/2">
+      <img src="./images/docter.jpg" alt="Doctor working on laptop" class="rounded-lg shadow-md w-full">
+    </div>
+    
+    <!-- Right Text -->
+    <div class="w-full md:w-1/2 space-y-5">
+      <p class="text-gray-700 text-sm font-medium">Zocdoc for private practices</p>
+      
+      <h2 class="text-3xl font-semibold leading-snug">
+        Are you a practice interested in filling your calendar?
+      </h2>
+      
+      <ul class="list-disc pl-6 text-gray-800 space-y-2">
+        <li>Reach millions of new patients on zocdoc.com</li>
+        <li>Make it easy for patients to book with you in all the places they look for care</li>
+        <li>
+          Eliminate hold times for patients with 
+          <a href="#" class="text-black underline">Zo, your AI phone assistant</a>
+          <span class="bg-yellow-400 text-xs font-bold px-1 ml-2 rounded">New</span>
+        </li>
+      </ul>
+      
+      <!-- Button -->
+      <a href="#" class="inline-block bg-yellow-400 text-black font-medium px-6 py-3 rounded-md shadow hover:bg-yellow-500 transition">
+        Learn more about our practice solutions
+      </a>
+    </div>
+
+  </div>
+   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start px-6 md:px-12 gap-10 mt-40">
+
+    <!-- Left Text -->
+    <div class="w-full md:w-1/2 space-y-5">
+      <p class="text-gray-700 text-lg font-medium font-semibold">Zocdoc for health systems</p>
+      <h2 class="text-3xl font-semibold leading-snug">
+        We’re trusted by top health systems
+      </h2>
+      <a href="#"
+         class="inline-block bg-yellow-300 text-black font-medium px-6 py-3 rounded-md shadow hover:bg-yellow-400 transition">
+        Partner with Zocdoc
+      </a>
+    </div>
+
+    <!-- Right Logos -->
+    <div class="w-full md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-6 items-center justify-items-center p-5">
+      <img src="./images/medstar-health-logo___baa3b.svg" alt="MedStar Health" class="max-h-20 object-contain hover:shadow-md transition">
+      <img src="./images/mountsinai-logo___c1387.svg" alt="Mount Sinai" class="max-h-20 object-contain hover:shadow-md transition">
+      <img src="./images/tufts-medical-logo___5e76f.svg" alt="Tufts Medical Center" class="max-h-20 object-contain hover:shadow-md transition">
+      <img src="./images/montefiore-logo___1361e.svg" alt="Montefiore" class="max-h-20 object-contain hover:shadow-md transition">
+      <img src="./images/intermount-health___aabe2.svg" alt="Intermountain Health" class="max-h-20 object-contain hover:shadow-md transition">
+      <img src="./images/method.svg" alt="Houston Methodist" class="max-h-20 object-contain hover:shadow-md transition">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="bg-gray-50 py-12 p-10 mt-20">
+ 
+</section>
+
+
+<section class="bg-yellow-100 py-12">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-8">Find doctors and dentists by city</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6">
+
+      <!-- 1 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          New York City
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Manhattan</li>
+          <li>Brooklyn</li>
+          <li>Queens</li>
+          <li>Bronx</li>
+          <li>Staten Island</li>
+        </ul>
+      </details>
+
+      <!-- 2 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Baltimore
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Fells Point</li>
+          <li>Inner Harbor</li>
+          <li>Federal Hill</li>
+        </ul>
+      </details>
+
+      <!-- 3 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Philadelphia
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Center City</li>
+          <li>University City</li>
+          <li>South Philly</li>
+          <li>Old City</li>
+        </ul>
+      </details>
+
+      <!-- 4 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Boston
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Back Bay</li>
+          <li>South End</li>
+          <li>Beacon Hill</li>
+          <li>Cambridge</li>
+        </ul>
+      </details>
+
+      <!-- 5 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Brooklyn
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Williamsburg</li>
+          <li>Park Slope</li>
+          <li>Brooklyn Heights</li>
+          <li>Bushwick</li>
+        </ul>
+      </details>
+
+      <!-- 6 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Washington, DC
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Capitol Hill</li>
+          <li>Georgetown</li>
+          <li>Dupont Circle</li>
+          <li>Adams Morgan</li>
+        </ul>
+      </details>
+
+      <!-- 7 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Houston
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Midtown</li>
+          <li>Montrose</li>
+          <li>The Heights</li>
+        </ul>
+      </details>
+
+      <!-- 8 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          San Francisco
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Mission District</li>
+          <li>SOMA</li>
+          <li>Chinatown</li>
+        </ul>
+      </details>
+
+      <!-- 9 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Queens
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Astoria</li>
+          <li>Flushing</li>
+          <li>Jamaica</li>
+          <li>Forest Hills</li>
+        </ul>
+      </details>
+
+      <!-- 10 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Seattle
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Capitol Hill</li>
+          <li>Ballard</li>
+          <li>Fremont</li>
+        </ul>
+      </details>
+
+      <!-- 11 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Dallas
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Deep Ellum</li>
+          <li>Oak Lawn</li>
+          <li>Bishop Arts</li>
+        </ul>
+      </details>
+
+      <!-- 12 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Miami
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Wynwood</li>
+          <li>Little Havana</li>
+          <li>South Beach</li>
+        </ul>
+      </details>
+
+      <!-- 13 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Bronx
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Riverdale</li>
+          <li>Fordham</li>
+          <li>Belmont</li>
+          <li>Hunts Point</li>
+        </ul>
+      </details>
+
+      <!-- 14 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Atlanta
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Midtown</li>
+          <li>Buckhead</li>
+          <li>Downtown</li>
+          <li>Old Fourth Ward</li>
+        </ul>
+      </details>
+
+      <!-- 15 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Austin
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>East Austin</li>
+          <li>South Congress</li>
+          <li>Zilker</li>
+        </ul>
+      </details>
+
+      <!-- 16 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Los Angeles
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Hollywood</li>
+          <li>Downtown</li>
+          <li>Santa Monica</li>
+          <li>Koreatown</li>
+        </ul>
+      </details>
+
+      <!-- 17 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Long Island
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Hempstead</li>
+          <li>Garden City</li>
+          <li>Oyster Bay</li>
+          <li>Huntington</li>
+        </ul>
+      </details>
+
+      <!-- 18 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Denver
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>Capitol Hill</li>
+          <li>Cherry Creek</li>
+          <li>LoDo</li>
+        </ul>
+      </details>
+
+      <!-- 19 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          Chicago
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>The Loop</li>
+          <li>River North</li>
+          <li>Lincoln Park</li>
+          <li>Hyde Park</li>
+        </ul>
+      </details>
+
+      <!-- 20 -->
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer font-medium border-b border-gray-300 pb-2">
+          San Diego
+          <span class="transition-transform group-open:rotate-180">▼</span>
+        </summary>
+        <ul class="mt-2 pl-2 space-y-1 text-gray-700">
+          <li>Downtown</li>
+          <li>La Jolla</li>
+          <li>Gaslamp Quarter</li>
+          <li>North Park</li>
+        </ul>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-yellow-100 py-12">
+  <div class="max-w-7xl mx-auto bg-white flex flex-col md:flex-row items-center md:items-stretch px-6 md:px-12 py-8 gap-8">
+
+    <!-- Left Column -->
+    <div class="w-full md:w-1/2 flex flex-col justify-center space-y-6">
+      <p class="text-gray-800 text-base font-medium">Zocdoc jobs</p>
+      <h2 class="text-3xl font-semibold leading-snug text-gray-900">
+        Join us, and help transform healthcare for everyone.
+      </h2>
+      <a href="https://www.zocdoc.com/about/careers-list/"
+         class="inline-block bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-medium px-6 py-3 rounded-md transition w-50">
+        View job openings
+      </a>
+    </div>
+
+    <!-- Right Column (Image) -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="./images/doodle-illustration-featuring-two-business-people-professional-attire-both-male-characters_87771-32659-removebg-preview(1).png" alt="Zocdoc Jobs Illustration" class="max-h-80 object-contain">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="bg-yellow-100 py-12">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <!-- Title -->
+    <h2 class="text-2xl font-semibold text-gray-900 mb-8">Common visit reasons</h2>
+
+    <!-- Dropdown Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <!-- Medical -->
+      <div class="w-full">
+        <details class="group">
+          <summary class="flex justify-between items-center text-lg font-medium text-gray-900 cursor-pointer list-none border-b border-gray-200 pb-2">
+            Medical
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>Annual Physical</li>
+            <li>COVID-19 Consultation</li>
+            <li>Flu Symptoms</li>
+            <li>High Blood Pressure</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- Dental -->
+      <div class="w-full">
+        <details class="group">
+          <summary class="flex justify-between items-center text-lg font-medium text-gray-900 cursor-pointer list-none border-b border-gray-200 pb-2">
+            Dental
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>Cleaning</li>
+            <li>Tooth Pain</li>
+            <li>Braces Consultation</li>
+            <li>Whitening</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- Mental Health -->
+      <div class="w-full">
+        <details class="group">
+          <summary class="flex justify-between items-center text-lg font-medium text-gray-900 cursor-pointer list-none border-b border-gray-200 pb-2">
+            Mental Health
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>Anxiety</li>
+            <li>Depression</li>
+            <li>Therapy Session</li>
+            <li>Stress Management</li>
+          </ul>
+        </details>
+      </div>
+
+      <!-- Vision -->
+      <div class="w-full">
+        <details class="group">
+          <summary class="flex justify-between items-center text-lg font-medium text-gray-900 cursor-pointer list-none border-b border-gray-200 pb-2">
+            Vision
+            <span class="transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <ul class="mt-3 space-y-2 text-gray-700">
+            <li>Eye Exam</li>
+            <li>Contact Lens Fitting</li>
+            <li>Glasses Prescription</li>
+            <li>Vision Therapy</li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-800 text-gray-300 pt-10 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-8">
+
+    <!-- Zocdoc -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Zocdoc</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Press</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Contact us</a></li>
+        <li><a href="#" class="hover:underline">Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Discover -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Discover</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">The Paper Gown: Stories for and about patients</a></li>
+        <li><a href="#" class="hover:underline">Practice Resources for providers</a></li>
+        <li><a href="#" class="hover:underline">Community Standards</a></li>
+        <li><a href="#" class="hover:underline">Data and privacy</a></li>
+        <li><a href="#" class="hover:underline">Verified reviews</a></li>
+      </ul>
+    </div>
+
+    <!-- Insurance & Specialties -->
+    <div>
+      <ul class="space-y-3 text-sm">
+        <li><a href="#" class="text-white font-semibold underline">Insurance Carriers</a></li>
+        <li><a href="#" class="text-white font-semibold underline">Top Specialties</a></li>
+      </ul>
+    </div>
+
+    <!-- For Doctors -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Are you a top doctor or health service?</h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#" class="hover:underline">
+            Try Zo, your AI Phone Assistant
+            <span class="bg-yellow-500 text-black text-xs font-bold px-1 rounded ml-1">New</span>
+          </a>
+        </li>
+        <li><a href="#" class="hover:underline">List your practice on Zocdoc</a></li>
+        <li><a href="#" class="hover:underline">Become an EHR partner</a></li>
+        <li><a href="#" class="hover:underline">Access Zocdoc for Developers</a></li>
+        <li><a href="#" class="hover:underline">Learn about Zocdoc Enterprise Solutions</a></li>
+      </ul>
+    </div>
+
+    <!-- App Downloads -->
+    <div>
+      <h3 class="text-white font-semibold mb-3">Get the Zocdoc app</h3>
+      <div class="space-y-2">
+        <a href="#"><img src="appstore.png" alt="Download on App Store" class="h-10"></a>
+        <a href="#"><img src="./images/Untitled-removebg-preview(1).png" alt="Get it on Google Play" class="h-10 bg-white"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="max-w-7xl mx-auto px-6 mt-8 text-xs text-gray-400">
+    <p>
+      The content provided here and elsewhere on the Zocdoc site or mobile app is provided for general informational purposes only. 
+      It is not intended as, and Zocdoc does not provide, medical advice, diagnosis or treatment. 
+      Always contact your healthcare provider directly with any questions you may have regarding your health or specific medical advice.
+    </p>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 border-t border-gray-700 pt-4">
+    <div class="space-x-4">
+      <span>© 2025 Zocdoc, Inc.</span>
+      <a href="#" class="hover:underline">Terms</a>
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Consumer Health</a>
+      <a href="#" class="hover:underline">Site map</a>
+      <button class="bg-gray-700 px-2 py-1 rounded-full border border-gray-500 text-white text-xs">✓ X</button>
+      <a href="#" class="hover:underline">Your privacy choices</a>
+    </div>
+    <div class="flex space-x-4 mt-4 h-10 md:mt-0 ">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
