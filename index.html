@@ -28,28 +28,23 @@
    
 <body class="bg-[#FFF9EC] text-gray-900">
 
-   <!-- Navbar -->
-<header class="flex items-center justify-between px-4 py-4 md:px-10">
-  <!-- Logo -->
-  <div class="flex items-center gap-2">
-    <div class="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center font-bold text-xl">Z</div>
-    <a class="font-bold text-xl" href="#home">Zocdoc</a>
-  </div>
+  <!-- Navbar -->
+    <header class="flex items-center justify-between px-4 py-4 md:px-10 ">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-yellow-300 rounded-full flex items-center justify-center font-bold text-xl">Z</div>
+            <a class="font-bold text-xl" href="#home">Zocdoc</a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-19 text-m font-bold text-zinc-600 fixed top-5 right-0 left-100 ">
+            <a href="/browse.html" class="hover:underline">Browse</a>
+            <a href="help.html" class="hover:underline">Help</a>
+            <a href="https://zocdoc.vercel.app/" class="hover:underline">List your practice on Zocdoc</a>
+            <a href="/login.html" class="hover:underline">Log in</a>
+            <a href="./signup.html" class="bg-yellow-300 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">Sign up</a>
+        </nav>
 
-  <!-- Desktop Menu -->
-  <nav class="hidden md:flex items-center space-x-6 text-m font-bold text-zinc-600">
-    <a href="/browse.html" class="hover:underline">Browse</a>
-    <a href="help.html" class="hover:underline">Help</a>
-    <a href="https://zocdoc.vercel.app/" class="hover:underline">List your practice</a>
-    <a href="/login.html" class="hover:underline">Log in</a>
-    <a href="./signup.html" class="bg-yellow-300 text-black px-4 py-2 rounded font-semibold hover:bg-yellow-400">Sign up</a>
-  </nav>
+        <a class="md:hidden" href=""><i class="fa-solid fa-bars"></i></a>
 
-  <!-- Mobile Menu Button -->
-  <button class="md:hidden text-2xl text-zinc-700">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-</header>
+    </header>
 
 
 
